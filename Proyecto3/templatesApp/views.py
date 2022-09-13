@@ -12,3 +12,6 @@ def infousuario(request):
             "email" : "pedro@pedro.cl"
            }
     return render(request, 'templatesApp/userinfotemplate.html', data)
+
+def index(request):
+    return render(request, 'templatesApp/index.html')
