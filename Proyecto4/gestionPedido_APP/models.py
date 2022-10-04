@@ -12,12 +12,6 @@ class Producto(models.Model):
     categoria = models.CharField(max_length=20)
     precio = models.IntegerField()
 
-
-
-
-
-
-
 class Pedido(models.Model):
     nropedido = models.IntegerField()
     fecha = models.DateField()
