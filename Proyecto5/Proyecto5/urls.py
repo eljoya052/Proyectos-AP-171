@@ -20,4 +20,6 @@ from persona_APP import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('persona/', views.personadata),
+    path('', views.index),
+    path('proyectos/', views.listadoproyectos),
 ]
