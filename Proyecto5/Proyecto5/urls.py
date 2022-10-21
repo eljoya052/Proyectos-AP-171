@@ -22,4 +22,5 @@ urlpatterns = [
     path('persona/', views.personadata),
     path('', views.index),
     path('proyectos/', views.listadoproyectos),
+    path('agregarproyecto/', views.agregarproyecto),
 ]
