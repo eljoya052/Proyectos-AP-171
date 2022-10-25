@@ -10,12 +10,20 @@
 <body class="container mt-5">
     <div class="alert alert-info display-1 text-center">AGREGAR PROYECTO</div>
 
-    <form action="POST">
-        {{form.as_p}}
-        {% csrf_token %}
-        <input type="submit" value="AGREGAR PROYECTO" class="btn btn-info">
+    <form method="POST">
+        <table class="table">
+            {{form.as_table}}
+            {% csrf_token %}
+
+            <tr>
+                <td colspan=2>
+                    <a href="../proyectos" class="btn btn-info mt-5">PROYECTOS</a>
+                    <input type="submit" value="AGREGAR PROYECTO" class="btn btn-info float-end">
+                </td>
+            </tr>            
+        </table>       
     </form>
-    <a href="/proyectos" class="btn btn-info mt-5">PROYECTOS</a>
+    
     
 </body>
 </html>
